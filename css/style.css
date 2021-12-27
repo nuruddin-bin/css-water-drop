@@ -1,0 +1,61 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+}
+
+.content{
+    margin: auto;
+}
+
+.drop{
+    height: 20rem;
+    width: 20rem;
+    background: #fff;
+    margin: 0 1.5rem;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  26px 26px 99px #cfcfcf, -26px -26px 99px #ffffff;
+    position: relative;
+    aspect-ratio: 1/1;
+    -webkit-aspect-ratio: 1/1;
+    -moz-aspect-ratio: 1/1;
+}
+
+.drop::before,
+.drop::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.drop::before{
+    background: rgba(255, 255, 255, 0.767);
+    top: 2rem;
+    left: 8rem;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.drop::after{
+    background: rgba(255, 255, 255, 0.767);
+    height: 3.2rem;
+    width: 3.2rem;
+    top: 3.9rem;
+    left: 2.9rem;
+}
+
+.apple{
+    position: absolute;
+    font-size: 12rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
